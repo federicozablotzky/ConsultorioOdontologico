@@ -1,0 +1,78 @@
+﻿@{
+    ViewBag.Title = "Index";
+    
+}
+<script src="~/Scripts/jquery.flexslider.js"></script>
+<script src="~/Scripts/jquery.flexslider-min.js"></script>
+<script type="text/javascript" charset="utf-8">
+    (function ($) {
+
+        $(window).load(function () {
+
+            $('.flexslider').flexslider({
+
+                animation: "fade",
+                animationLoop: true,
+                startAt: 0,
+                slideshow: true,
+                slideshowSpeed: 7000,
+                animationSpeed: 600,
+                controlNav: false,
+                directionNav: false,
+
+            });
+
+        });
+
+    })(jQuery)
+
+</script>
+<!-- Place somewhere in the <body> of your page -->
+<div class="recuadroBlanco">
+    <div class="containerDelMedio">
+        <div class="flexslider shadow">
+            <ul class="slides">
+                <li>
+                    <img src="~/Images/anime_wallpaper_v1_by_jontewftnd4ye097.jpg" />
+                </li>
+                <li>
+                    <img src="~/Images/AnimeHairBlueWallpaper.jpg" />
+                </li>
+
+            </ul>
+        </div>
+        <div class="algo">
+            algo
+        </div>
+        <div class="algo">
+            algo
+        </div>
+        <div class="algo">
+            algo
+        </div>
+    </div>
+
+
+
+</div>
+
+<style>
+    .shadow {
+        -webkit-box-shadow: 0 8px 6px -6px black;
+        -moz-box-shadow: 0 8px 6px -6px black;
+        box-shadow: 0 8px 6px -6px black;
+    }
+
+    .algo {
+        margin: 10px;
+        visibility: visible;
+        left: 664px;
+        top: 540px;
+        width: 261px;
+        min-height: 275px;
+        background-color: rgb(240, 240, 240);
+        box-shadow: rgba(0, 0, 0, 0.6) 0px 1px 4px 0px;
+       
+        float: left;
+    }
+</style>
